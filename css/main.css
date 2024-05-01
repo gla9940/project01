@@ -656,7 +656,7 @@ p {
 
 #category .img-box ul li {
   width: calc((100% - 30px) / 2);
-  height: 200px;
+  height: 130px;
   margin-bottom: 30px;
   border-radius: 15px;
   position: relative;
