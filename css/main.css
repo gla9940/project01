@@ -25,7 +25,7 @@ header {
   left: 0;
   z-index: 999;
   background-color: #fff;
-  height: 80px;
+  height: 50px;
   overflow: hidden;
   padding: 0 30px;
   display: flex;
@@ -51,13 +51,13 @@ header .inner {
 
 header h1 {
   display: block;
-  padding-top: 10px;
+  padding-top: 3px;
   width: 100px;
 }
 
 header h1 img {
   display: block;
-  height: 60px;
+  height: 40px;
 
 }
 
@@ -82,7 +82,7 @@ header .gnb>li>a {
 
 header .utill {
   display: flex;
-  padding: 30px 0;
+  padding: 15px 0;
   height: 30px;
 }
 
@@ -137,15 +137,15 @@ header .gnb>li:hover>a::before {
 
 header .utill .search a {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background: url(../img/search_icon.png)no-repeat center / cover;
 }
 
 header .utill .login a {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background: url(../img/icon_login.png)no-repeat center / cover;
 }
 
@@ -158,8 +158,8 @@ header .utill .cart a {
 
 header .utill .ham a {
   display: block;
-  width: 25px;
-  height: 20px;
+  width: 20px;
+  height: 15px;
   background: url(../img/icon_menu.png)no-repeat center / cover;
 }
 
@@ -186,7 +186,7 @@ header .utill .ham a {
 
 .mgnb-wrap h1 {
   position: absolute;
-  top: 0;
+  top: 15px;
 }
 
 .mgnb-wrap .mgnb>li>a {
@@ -588,11 +588,11 @@ p {
   display: block;
   content: "";
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 1250px;
-  height: 1250px;
+  width: 1000px;
+  height: 1000px;
   background: #fff;
   border-radius: 50%;
   overflow: hidden;
@@ -611,7 +611,7 @@ p {
 #category .txt-box {
   width: 100%;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 
@@ -620,27 +620,27 @@ p {
 }
 
 #category .txt-box h3 {
-  font-size: 15px;
-  margin-bottom: 30px;
+  font-size: 12px;
+  margin-bottom: 10px;
   color: #003628;
   font-family: "Montserrat", sans-serif;
 }
 
 #category .txt-box p {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
   color: #003628;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-family: "Montserrat", sans-serif;
 }
 
 #category .txt-box span {
-  font-size: 13px;
+  font-size: 12px;
   color: #000;
 }
 
 #category .img-box {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 #category.active .img-box {
@@ -655,7 +655,8 @@ p {
 
 #category .img-box ul li {
   width: calc((100% - 30px) / 2);
-  margin-bottom: 0px;
+  height: 100px;
+  margin-bottom: 10px;
   border-radius: 15px;
   position: relative;
 }
@@ -663,7 +664,7 @@ p {
 
 #category .img-box img {
   width: 100%;
-  height: 80%;
+  height: 100%;
   border-radius: 15px;
 }
 
@@ -674,7 +675,7 @@ p {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 30px;
+  bottom: 20px;
 }
 
 #product {
@@ -1329,18 +1330,46 @@ p {
 @media screen and (min-width:768px) {
   header {
     padding: 0 70px;
+    height: 80px;
+  }
+
+  header h1{
+    padding-top: 10px;
+  }
+
+  header h1 img {
+    height: 60px;
   }
 
   header .gnb {
     display: flex;
   }
 
+  header .utill {
+    padding: 30px 0;
+    height: 30px;
+  }
+
+  header .utill .search a {
+    width: 20px;
+    height: 20px;
+  }
+
+  header .utill .login a {
+    width: 20px;
+    height: 20px;
+  }
+
   header .utill .ham a {
     display: none;
+    width: 25px;
+    height: 20px;
   }
 
   header .utill .cart a {
     display: block;
+    width: 25px;
+    height: 20px;
   }
 
   header .gnb>li>a {
@@ -1361,6 +1390,12 @@ p {
 
   #main-visual .mv2 {
     background: url(../img/main_visual_slide_02.jpg)no-repeat center / cover;
+  }
+
+  #category .circle {
+    top: 50%;
+    width: 1250px;
+    height: 1250px;
   }
 
   #category .txt-box {
