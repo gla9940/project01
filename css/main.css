@@ -272,9 +272,9 @@ header .utill .ham a {
 }
 
 #main-visual .mv1 h4,
-h3,
-p,
-span {
+#main-visual h3,
+#main-visual p,
+#main-visual span {
   color: #fff;
 }
 
@@ -611,7 +611,7 @@ p {
 #category .txt-box {
   width: 100%;
   text-align: center;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 
@@ -640,7 +640,7 @@ p {
 }
 
 #category .img-box {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 #category.active .img-box {
@@ -654,9 +654,8 @@ p {
 }
 
 #category .img-box ul li {
-  width: calc((100% - 50px) / 2);
-  height: 150px;
-  margin-bottom: 30px;
+  width: calc((100% - 30px) / 2);
+  margin-bottom: 0px;
   border-radius: 15px;
   position: relative;
 }
@@ -664,7 +663,7 @@ p {
 
 #category .img-box img {
   width: 100%;
-  height: 100%;
+  height: 80%;
   border-radius: 15px;
 }
 
@@ -1382,8 +1381,12 @@ p {
 
   #category .img-box ul li {
     height: 170px;
+    margin-bottom: 20px;
   }
 
+  #category .img-box img {
+    height: 100%;
+  }
 
   #review .line-box {
     border: 0;
