@@ -785,7 +785,7 @@ p {
 }
 
 
-#review.active .video {
+#review.active .video iframe {
   animation: fadeRight 1s 0.5s backwards;
 }
 
