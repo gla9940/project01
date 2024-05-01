@@ -440,7 +440,6 @@ p {
   color: transparent;
 }
 
-
 #main-visual .slide_auto_btn button.stop {
   background: url(../img/btn_pause.png)no-repeat center / 14px;
 }
@@ -453,6 +452,7 @@ p {
 #fp-nav ul li .fp-tooltip.right {
   top: -25px;
   right: -10px;
+  color: #f60;
 }
 
 #fp-nav ul li {
@@ -836,7 +836,7 @@ p {
   height: 60px;
 }
 
-#review .review-box p{
+#review .review-box p {
   font-size: 12px;
   padding: 10px 0;
 }
@@ -858,7 +858,7 @@ p {
 
 #showroom .txt-box {
   text-align: center;
-  padding: 100px 0 50px;
+  padding: 80px 0 50px;
   transition: all 0.5s;
 }
 
@@ -899,13 +899,13 @@ p {
 
 #showroom p {
   color: #003628;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: "Montserrat", sans-serif;
 }
 
 #showroom h3 {
   color: #003628;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 28px;
   font-family: "Montserrat", sans-serif;
@@ -916,7 +916,7 @@ p {
   width: 50px;
   height: 1px;
   background-color: #003628;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #showroom .img-box {
@@ -937,7 +937,7 @@ p {
 #mattress-box .inner {
   text-align: center;
   position: relative;
-  padding-top: 200px;
+  padding-top: 100px;
   white-space: nowrap;
 }
 
@@ -958,38 +958,42 @@ p {
 
 #mattress-box .txt-box>h3 {
   color: #fff;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: normal;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-family: "Montaga", serif;
 }
 
 #mattress-box .txt-box>span {
   display: block;
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   margin-bottom: 50px;
 }
 
 #mattress-box .txt-box>p {
   color: #fff;
   line-height: 2;
-  font-size: 18px;
-  margin-bottom: 100px;
+  font-size: 12px;
+  margin-bottom: 50px;
   letter-spacing: 0.7px;
 }
 
 #mattress-box .img-box {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
+#mattress-box .img-box img{
+  margin-bottom: 20px;
+}
+
 
 #mattress-box .img-box>div {
-  width: 200px;
+  width: 150px;
   margin-right: 0px;
 }
 
@@ -998,6 +1002,7 @@ p {
 }
 
 #mattress-box .img-box h3 {
+  font-size: 16px;
   color: #fff;
   padding: 30px 0 40px;
 }
@@ -1005,6 +1010,7 @@ p {
 #mattress-box .img-box p {
   color: #fff;
   letter-spacing: 0.7px;
+  font-size: 12px;
 }
 
 #mattress-box .more {
@@ -1584,7 +1590,7 @@ p {
     border-right: 1px solid #ddd;
   }
 
-  #review .review-box>div:last-child{
+  #review .review-box>div:last-child {
     border-right: 0;
   }
 
@@ -1596,13 +1602,96 @@ p {
     animation: fadeUp 1s 1s backwards;
   }
 
+  #showroom .txt-box {
+    padding: 100px 0 50px
+  }
+
+  #showroom .txt-box .more a {
+    font-size: 12px;
+    padding: 5px 0;
+  }
+
+  #showroom .txt-box .more a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0px;
+    height: 1px;
+    background-color: #f60;
+    position: absolute;
+    transition: all 0.5s;
+  }
+
+  #showroom .txt-box .more a:hover::before {
+    width: 80px;
+  }
+
+  #showroom p {
+    margin-bottom: 30px;
+  }
+
+  #showroom h3 {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+
+  #showroom .line {
+    width: 50px;
+    margin-bottom: 30px;
+  }
+
   #showroom .img-box {
     height: 50%;
   }
 
+  #showroom .img-box img {
+    height: 100%;
+  }
+
+  #mattress-box .inner {
+    padding-top: 200px;
+  }
+
+  #mattress-box .txt-box>h3 {
+    font-size: 45px;
+    margin-bottom: 50px;
+  }
+
+  #mattress-box .txt-box>span {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  #mattress-box .txt-box>p {
+    font-size: 18px;
+    margin-bottom: 50px;
+    letter-spacing: 0.7px;
+  }
+
+  #mattress-box .img-box {
+    margin-bottom: 30px;
+  }
+
   #mattress-box .img-box>div {
     margin-right: 50px;
+    width: 200px;
   }
+
+  #mattress-box .img-box h3 {
+    padding: 30px 0 40px;
+  }
+
+  #mattress-box .img-box p {
+    font-size: 14px;
+  }
+
+  #mattress-box .more {
+    bottom: 50px;
+  }
+
+
 
   #system .txt-box {
     width: 100%;
@@ -1613,9 +1702,6 @@ p {
     padding-top: 130px;
   }
 
-  #mattress-box .txt-box>p {
-    margin-bottom: 50px;
-  }
 
   #magazine .img-box {
     top: 8%;
@@ -1627,10 +1713,6 @@ p {
     height: 30px;
     bottom: 35%;
     transition: all 0.5s;
-  }
-
-  #mattress-box .txt-box>h3 {
-    font-size: 55px;
   }
 
   #magazine .more {
@@ -1755,7 +1837,7 @@ p {
     justify-content: space-between;
   }
 
-  #review .review-box p{
+  #review .review-box p {
     padding: 0 50px;
   }
 

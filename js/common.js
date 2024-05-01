@@ -59,7 +59,7 @@ $(document).ready(function () { //start
   $('#fullpage').fullpage({
     navigation: true,
     anchors: ['section01', 'section02', 'section03', 'section04', 'section05','section06','section07','section08','section09','section10'],
-    navigationTooltips: ['01', '02','03','04','05','06','07','08','09',],
+    navigationTooltips: ['01', '02','03','04','05','06','07','08','09','10'],
     showActiveTooltip: true,
     autoScrolling: true,
     responsiveWidth: 1024,
