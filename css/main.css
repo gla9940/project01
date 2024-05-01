@@ -361,22 +361,22 @@ p {
   background: url(../img/main_visual_slide_03.jpg)no-repeat center / cover;
 }
 
-#main-visual .mv3 .txt-box{
+#main-visual .mv3 .txt-box {
   position: absolute;
   top: 180px;
 }
 
-#main-visual .mv3 .txt-box h3{
+#main-visual .mv3 .txt-box h3 {
   font-size: 55px;
 }
 
-#main-visual .mv3 .txt-box h4{
+#main-visual .mv3 .txt-box h4 {
   font-size: 32px;
   color: #fff;
   padding: 30px 0;
 }
 
-#main-visual .mv3 .txt-box p{
+#main-visual .mv3 .txt-box p {
   font-size: 22px;
 }
 
@@ -450,7 +450,7 @@ p {
   display: none;
 }
 
-#fp-nav ul li .fp-tooltip.right{
+#fp-nav ul li .fp-tooltip.right {
   top: -25px;
   right: -10px;
 }
@@ -791,9 +791,9 @@ p {
 
 
 #review h3 {
-  font-size: 28px;
+  font-size: 22px;
   color: #003628;
-  padding: 120px 0 30px;
+  padding: 80px 0 0;
 }
 
 #review p {
@@ -802,8 +802,9 @@ p {
 }
 
 #review .video {
-  padding: 30px 20px;
+  padding: 20px 10px;
   width: 100%;
+  height: 100%;
 }
 
 #review img {
@@ -814,24 +815,35 @@ p {
   padding: 20px 0;
 }
 
+#review iframe {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  width: 60%;
+  height: 50%;
+}
+
 #review .review-box {
   width: 100%;
-  display: flex;
+  display: block;
   justify-content: space-between;
+  position: absolute;
+  left: 65%;
+  top: 220px;
 }
 
 #review .review-box img {
-  height: 100px;
+  height: 60px;
 }
 
-
-#review .review-box>div:last-child {
-  border-right: 0;
+#review .review-box p{
+  font-size: 12px;
+  padding: 10px 0;
 }
 
 #review .review-box>div {
   width: calc(100% / 3);
-  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 
@@ -1340,7 +1352,7 @@ p {
     height: 80px;
   }
 
-  header h1{
+  header h1 {
     padding-top: 10px;
   }
 
@@ -1400,13 +1412,13 @@ p {
     font-size: 30px;
     font-weight: 400;
   }
-  
+
   #main-visual .mv1 h3 {
     top: 230px;
     font-size: 70px;
     font-weight: 400;
   }
-  
+
   #main-visual .mv1 h3::after {
     width: 300px;
     margin-top: 10px;
@@ -1415,7 +1427,7 @@ p {
   #main-visual.active .mv1 h3::after {
     animation: line2 1s 1.5s backwards;
   }
-  
+
   #main-visual .mv1 p {
     top: 380px;
     font-size: 18px;
@@ -1459,23 +1471,23 @@ p {
   #product .txt-box {
     padding-top: 200px;
   }
-  
+
   #product .txt-box p {
     font-size: 40px;
     font-weight: 300;
     letter-spacing: 3px;
   }
-  
+
   #product p {
     font-size: 15px;
     padding: 20px 0 10px;
     color: #003628;
   }
-  
+
   #product .swiper {
     height: 50%;
   }
-  
+
   #product .swiper-pagination-bullet {
     width: 10%;
     height: 1px;
@@ -1486,18 +1498,18 @@ p {
     border: 0;
     margin-top: -50px;
   }
-  
+
   #product .swiper-pagination {
     position: absolute;
     bottom: 0;
   }
-  
+
   #product .swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: 10%;
     border-radius: 3px;
     background-color: #003628;
   }
-  
+
   #product .swiper-button-prev {
     width: 40px;
     height: 40px;
@@ -1505,7 +1517,7 @@ p {
     background: #fff url(../img/arrow_prev.png)no-repeat center / 10px 17px;
     margin-left: 10px;
   }
-  
+
   #product .swiper-button-next {
     width: 40px;
     height: 40px;
@@ -1513,6 +1525,8 @@ p {
     background: #fff url(../img/arrow_next.png)no-repeat center / 10px 17px;
     margin-right: 10px;
   }
+
+
 
   #review .line-box {
     border: 0;
@@ -1524,15 +1538,23 @@ p {
 
   #review p {
     margin-bottom: 30px;
+    font-size: 14px;
+    color: #003628;
+    padding: 20px 0;
+  }
+
+  #review img {
+    padding-top: 20px;
   }
 
   #review .video {
     position: relative;
     width: 100%;
-    height: 0;
+    height: 400px;
     overflow: hidden;
     padding-top: calc(9/16 * 80%);
     margin-bottom: 30px;
+    padding: 30px 0;
   }
 
   #review iframe {
@@ -1541,6 +1563,33 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+
+  #review .review-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 0;
+    position: static;
+
+  }
+
+  #review .review-box p {
+    padding: 20px 0;
+  }
+
+  #review .review-box>div {
+    width: calc(100% / 3);
+    border-bottom: 0;
+    border-right: 1px solid #ddd;
+  }
+
+  #review .review-box>div:last-child{
+    border-right: 0;
+  }
+
+  #review .review-box img {
+    height: 80px;
   }
 
   #review.active .review-box {
@@ -1700,8 +1749,16 @@ p {
   }
 
   #review .review-box {
+    width: 100%;
     padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
   }
+
+  #review .review-box p{
+    padding: 0 50px;
+  }
+
 
   #review.active .txt-box {
     animation: fadeUp 1s 0.5s backwards;
