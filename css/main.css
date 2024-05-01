@@ -656,8 +656,8 @@ p {
 
 #category .img-box ul li {
   width: calc((100% - 30px) / 2);
-  height: 100px;
-  margin-bottom: 10px;
+  height: 130px;
+  margin-bottom: 20px;
   border-radius: 15px;
   position: relative;
 }
@@ -1453,6 +1453,64 @@ p {
 
   #category .img-box img {
     height: 100%;
+  }
+
+  #product .txt-box {
+    padding-top: 200px;
+  }
+  
+  #product .txt-box p {
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 3px;
+  }
+  
+  #product p {
+    font-size: 15px;
+    padding: 20px 0 10px;
+    color: #003628;
+  }
+  
+  #product .swiper {
+    height: 50%;
+  }
+  
+  #product .swiper-pagination-bullet {
+    width: 10%;
+    height: 1px;
+    background-color: #000;
+    border-radius: 3px;
+    transition: all 0.7s;
+    margin: 0;
+    border: 0;
+    margin-top: -50px;
+  }
+  
+  #product .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  #product .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 10%;
+    border-radius: 3px;
+    background-color: #003628;
+  }
+  
+  #product .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff url(../img/arrow_prev.png)no-repeat center / 10px 17px;
+    margin-left: 10px;
+  }
+  
+  #product .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff url(../img/arrow_next.png)no-repeat center / 10px 17px;
+    margin-right: 10px;
   }
 
   #review .line-box {
