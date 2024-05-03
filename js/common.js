@@ -13,7 +13,7 @@ $(document).ready(function () { //start
     }, 100)
   });
 
-  var offset = $("header").offset();
+ /* var offset = $("header").offset();
   $(window).scroll(function () {
 
     if ($(document).scrollTop() > offset.top) {
@@ -25,6 +25,37 @@ $(document).ready(function () { //start
     }
 
 
+
+
+  });*/
+
+  $(window).on("hashchange", function(){
+
+    var hashname = location.hash;
+
+    if(hashname == "#section01"){
+      $("header").removeClass("header-scroll");
+    }else if(hashname == "#section02"){
+      $("header").addClass("header-scroll");
+    }else if(hashname == "#section03"){
+      $("header").addClass("header-scroll");
+    }else if(hashname == "#section04"){
+      $("header").addClass("header-scroll");
+    }else if(hashname == "#section05"){
+      $("header").addClass("header-scroll");
+    }else if(hashname == "#section06"){
+      $("header").addClass("header-scroll");
+    }else if(hashname == "#section07"){
+      $("header").addClass("header-scroll");
+    }else if(hashname == "#section08"){
+      $("header").addClass("header-scroll");
+    }else if(hashname == "#section09"){
+      $("header").addClass("header-scroll");
+    }else if(hashname == "#section10"){
+      $("header").addClass("header-scroll");
+    }else{
+      $("header").removeClass("header-scroll");
+    }
   });
 
 
